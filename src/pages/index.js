@@ -14,10 +14,8 @@ function Homepage() {
           <h2>Our Services</h2>
           <ul>
             <li>Self-service washers and dryers</li>
-            <li>Drop-off laundry service</li>
-            <li>Commercial laundry service</li>
-            <li>Folding and ironing service</li>
             <li>Detergent and fabric softener vending machines</li>
+            <li>On site change machine</li>
           </ul>
         </section>
         <section className="why-choose-us">
@@ -32,7 +30,6 @@ function Homepage() {
             <li>Clean and well-maintained facility</li>
             <li>Competitive pricing</li>
             <li>Convenient location and hours</li>
-            <li>Professional and friendly staff</li>
           </ul>
         </section>
         <section className="visit-us">

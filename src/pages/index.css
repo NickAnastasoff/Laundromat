@@ -18,23 +18,28 @@
   max-width: 100%;
   height: auto;
   margin-bottom: 30px;
+  border-radius: 10px;
 }
-
 
 .header h1 {
   position: absolute;
-  top: 150px;
-  left: 50px;
-  font-size: 24px;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 60px;
   font-weight: 700;
   text-align: left;
   color: #ffffff;
   line-height: 1.2;
   width: 300px;
   max-width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: pre-wrap;
+  overflow: visible;
   text-overflow: ellipsis;
+  background-color: rgba(0,0,0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
+  padding: 2%;
+  border-radius: 2%;
 }
 
 .main-content {
