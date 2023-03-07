@@ -1,23 +1,44 @@
-import './index.css';
+import React from "react";
+import Wide from './images/Wide.png'
 
-function Home() {
+function Homepage() {
   return (
     <div>
-      <header>
-        <p>
-          Home
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wide">
+      <img src={Wide}/>
+      </div>
+        <div className="hero-text">
+          <h1>We're not your average laundromat</h1>
+        </div>
+      <main>
+        <section>
+          <h2>Our Services</h2>
+          <ul>
+            <li>Self-service washers and dryers</li>
+            <li>Drop-off laundry service</li>
+            <li>Commercial laundry service</li>
+            <li>Folding and ironing service</li>
+            <li>Detergent and fabric softener vending machines</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Why Choose Us?</h2>
+          <p>At our laundromat, we pride ourselves on providing top-quality service to our customers. Here are just a few reasons why you should choose us:</p>
+          <ul>
+            <li>State-of-the-art machines and equipment</li>
+            <li>Clean and well-maintained facility</li>
+            <li>Competitive pricing</li>
+            <li>Convenient location and hours</li>
+            <li>Professional and friendly staff</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Visit Us Today!</h2>
+          <p>Stop by our laundromat today and see for yourself why we're the best in town. We look forward to serving you!</p>
+        </section>
+      </main>
     </div>
   );
 }
 
-export default Home;
+export default Homepage;
