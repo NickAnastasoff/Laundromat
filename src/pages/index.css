@@ -22,9 +22,28 @@
 
 .header h1 {
   position: absolute;
+  transform: translateY(-250%);
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.2;
+  width: 800px;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow: visible;
+  text-overflow: ellipsis;
+  background-color: rgba(0,0,0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.header h2 {
+  position: absolute;
   top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
+  left: 2%;
+  transform: translateY(-15%);
   font-size: 60px;
   font-weight: 700;
   text-align: left;
@@ -41,6 +60,27 @@
   border-radius: 2%;
 }
 
+.header a {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(350%);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  line-height: 1.2;
+  width: 300px;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow: visible;
+  text-overflow: ellipsis;
+  background-color: rgb(0, 60, 238);
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
+  padding: 2%;
+  border-radius: 50px;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -49,15 +89,29 @@
   padding: 50px;
 }
 
+.main-content img {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+.blurb {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+  transform: translateY(-97%);
+}
+
 .services,
 .why-choose-us,
-.visit-us {
+.visit-us,
+.machines {
   margin-bottom: 50px;
 }
 
 .services h2,
 .why-choose-us h2,
-.visit-us h2 {
+.visit-us h2,
+.machines h2 {
   font-size: 24px;
   font-weight: 700;
   color: #4d4d4d;
@@ -65,13 +119,15 @@
 }
 
 .services ul,
-.why-choose-us ul {
+.why-choose-us ul,
+.machines ul {
   padding-left: 10px;
   list-style: none;
 }
 
 .services li,
-.why-choose-us li {
+.why-choose-us li,
+.machines li {
   font-size: 18px;
   font-weight: 400;
   padding-left: 10px;
