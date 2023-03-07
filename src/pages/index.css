@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f7f9fc;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  line-height: 1.2;
+  width: 300px;
+  max-width: 100%;
+  white-space: pre-wrap;
+  overflow: visible;
+  text-overflow: ellipsis;
+  background-color: rgba(0,0,0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 50px;
+}
+
+.services,
+.why-choose-us,
+.visit-us {
+  margin-bottom: 50px;
+}
+
+.services h2,
+.why-choose-us h2,
+.visit-us h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+}
+
+.services ul,
+.why-choose-us ul {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.services li,
+.why-choose-us li {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #4d4d4d;
+  margin-bottom: 10px;
 }
