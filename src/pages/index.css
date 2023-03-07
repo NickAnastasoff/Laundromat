@@ -1,17 +1,75 @@
-.wide {
-  position: relative;
-  height: 400px;
-  background-image: url("src/images/Wide.png");
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f7f9fc;
 }
 
-.hero-text {
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+
+.header h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
+  top: 150px;
+  left: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  line-height: 1.2;
+  width: 300px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.services,
+.why-choose-us,
+.visit-us {
+  margin-bottom: 50px;
+}
+
+.services h2,
+.why-choose-us h2,
+.visit-us h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+}
+
+.services ul,
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li,
+.why-choose-us li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4d4d4d;
+  margin-bottom: 10px;
 }

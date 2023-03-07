@@ -1,17 +1,16 @@
 import React from "react";
-import Wide from './images/Wide.png'
+import Wide from "./images/Wide.png";
+import "./index.css";
 
 function Homepage() {
   return (
-    <div>
-      <div className="wide">
-      <img src={Wide}/>
+    <div className="container">
+      <div className="header">
+        <img src={Wide} alt="Laundromat" />
+        <h1>We're not your average laundromat</h1>
       </div>
-        <div className="hero-text">
-          <h1>We're not your average laundromat</h1>
-        </div>
-      <main>
-        <section>
+      <main className="main-content">
+        <section className="services">
           <h2>Our Services</h2>
           <ul>
             <li>Self-service washers and dryers</li>
@@ -21,9 +20,13 @@ function Homepage() {
             <li>Detergent and fabric softener vending machines</li>
           </ul>
         </section>
-        <section>
+        <section className="why-choose-us">
           <h2>Why Choose Us?</h2>
-          <p>At our laundromat, we pride ourselves on providing top-quality service to our customers. Here are just a few reasons why you should choose us:</p>
+          <p>
+            At our laundromat, we pride ourselves on providing top-quality
+            service to our customers. Here are just a few reasons why you should
+            choose us:
+          </p>
           <ul>
             <li>State-of-the-art machines and equipment</li>
             <li>Clean and well-maintained facility</li>
@@ -32,9 +35,12 @@ function Homepage() {
             <li>Professional and friendly staff</li>
           </ul>
         </section>
-        <section>
+        <section className="visit-us">
           <h2>Visit Us Today!</h2>
-          <p>Stop by our laundromat today and see for yourself why we're the best in town. We look forward to serving you!</p>
+          <p>
+            Stop by our laundromat today and see for yourself why we're the best
+            in town. We look forward to serving you!
+          </p>
         </section>
       </main>
     </div>
