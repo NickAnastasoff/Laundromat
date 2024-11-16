@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(240, 238, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* allow stacking */
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 95%; 
+  max-width: 600px;
+  margin: auto;
+}
+
+.image-container {
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  filter: brightness(80%); /* darken */
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.75); /* drop shadow */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(245, 244, 249);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem; /* default font size for large screens */
+  font-weight: bold;
+  margin-bottom: 10px;
+  white-space: nowrap; /* prevent wrapping */
+}
+
+.operating-hours {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.operating-hours strong {
+  font-size: 1.1rem;
+}
+
+.operating-hours em {
+  font-size: 1rem;
+}
+
+.address {
+  margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.map-container {
+  margin-top: 40px; 
+  border-radius: 12px;
+  overflow: hidden; /* give the iframe rounded corners */
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.5); /* drop shadow */
+}
+
+.footer {
+  margin-top: 40px; 
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* shadow for the footer */
+}
+
+.footer-phone {
+  color: #333; 
+  text-decoration: none;
+}
+
+.footer a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Spacer for separating tiles */
+.spacer {
+  height: 40px; 
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem; /* Scale down the title for smaller screens */
+  }
+
+  .operating-hours {
+    font-size: 1rem; /* Adjust size of operating hours */
+  }
+
+  .operating-hours strong {
+    font-size: 1rem;
+  }
+
+  .operating-hours em {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.6rem; /* Further reduce title size for very small screens */
+  }
+
+  .operating-hours strong,
+  .operating-hours em {
+    font-size: 0.9rem; /* Further reduce text size */
+  }
+}
